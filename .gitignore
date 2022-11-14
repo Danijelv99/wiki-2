@@ -1,0 +1,6 @@
+venv
+db.sqllite3
+public/
+pycache/
+.coverage
+/coverage/

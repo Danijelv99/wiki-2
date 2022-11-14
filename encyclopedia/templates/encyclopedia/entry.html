@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% load blog_extras %}
+
+{% block title %}
+    
+{% endblock %}
+
+{% block body %}
+    {% if post %}
+        {{ post|convert_markdown|safe }}
+    {% else %}
+        <p>The page you requested was not found!</p>
+    {% endif %}
+{% endblock %}
